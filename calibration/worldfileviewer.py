@@ -213,7 +213,10 @@ class WorldFileViewer(object):
                     self.dphi = 0.0
             
     def main(self):
+        count = 0
         while self.going:
+            print count
+            count = count + 1
             self.check_input()
             self.move()
             self.composite()
